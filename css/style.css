@@ -89,7 +89,6 @@ a {
     background-color: #272a31;
     height: 100vh;
     width: 100%;
-    text-align: flex-start;
     padding: 3rem;
     transition: 0.5s;
     filter: drop-shadow(20px);
