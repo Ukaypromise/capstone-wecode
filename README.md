@@ -6,7 +6,7 @@ A website for a web development course
 
 ## Built With
 
-- HTML/CSS
+- HTML/CSS/Javascript
   -NPM, Git, Github
 
 ## Live Demo
