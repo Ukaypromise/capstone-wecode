@@ -78,7 +78,7 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Small Screen Control>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Small Screen Control>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -144,7 +144,8 @@ a {
 }
 
 .container-bg {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(255, 255, 255, 0.842),
       rgba(202, 203, 209, 0.7)
     ),
@@ -153,6 +154,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .headline p {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -167,11 +169,13 @@ a {
   margin-bottom: 1rem;
   font-weight: bolder;
 }
+
 .headline-box {
   width: 100%;
   padding: 1rem;
   border: 2px solid #fff;
 }
+
 .headline-box p {
   line-height: 1.5;
   font-size: 1rem;
@@ -188,6 +192,7 @@ a {
   font-weight: 700;
   color: #2c2b2b;
 }
+
 .headline-start p {
   line-height: 1.2;
   font-size: 1rem;
@@ -229,15 +234,16 @@ a {
   height: 80px;
   background-color: #272a31;
   align-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 2px;
   margin-bottom: 3px;
   cursor: pointer;
 }
+
 .card-title {
   color: #ec5242;
   margin-right: 1rem;
-  margin-bottom: o.5rem;
+  margin-bottom: 0.5rem;
   max-width: 40%;
 }
 
@@ -245,6 +251,7 @@ a {
   max-width: 20%;
   margin: 5px;
 }
+
 .card-text {
   font-size: 0.75rem;
   color: #fff;
@@ -264,6 +271,7 @@ a {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .btn-join:hover {
   background-color: #961709;
   color: #fff;
@@ -272,7 +280,9 @@ a {
 .see {
   display: none;
 }
-/*<<<<<<<<<<<<<<<<<<<< Featured Speakers >>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<< Featured Speakers >>>>>>>>>>>>>>>>>>>>> */
+
 .featured-speakers {
   display: flex;
   flex-direction: column;
@@ -295,6 +305,7 @@ a {
   width: 120px;
   height: 120px;
 }
+
 .speaker-content {
   margin-left: 1rem;
   display: flex;
@@ -306,6 +317,7 @@ a {
   margin-top: 0.5rem;
   color: #ec5242;
 }
+
 .speaker-content p {
   font-size: 10px;
   margin-top: 0.5rem;
@@ -319,11 +331,11 @@ a {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .fa-angle-down {
   font-size: 1rem;
   padding: 5px;
 }
-
 
 /* <<<<<<<<<<<<<<<<<<<<<<<< Partners>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .partner {
@@ -333,6 +345,7 @@ a {
   background-color: #2c2b2b;
   padding: 1rem 0;
 }
+
 .partner h2 {
   color: #fff;
   text-align: center;
@@ -342,9 +355,6 @@ a {
 
 .partner-logo {
   margin: 0 auto;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -355,10 +365,10 @@ a {
 }
 
 .p-logo {
-  margin: 0 auto;
-  width: 100px;
+  width: 150px;
   margin: 1rem;
 }
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<Footer>>>>>>>>>>>>>>>>> */
 
 .footer-info {
@@ -369,16 +379,19 @@ a {
   margin: auto 2rem;
   padding: 2rem 0;
 }
+
 h5 {
   width: 50%;
   font-size: 1.5rem;
   text-align: center;
 }
+
 .footer-info p {
   width: 50%;
   text-align: start;
   font-size: 0.85rem;
 }
+
 /* Larger Screen */
 @media screen and (min-width: 768px) {
   /* <<<<<<<  Navbar >>>>>>> */
@@ -439,23 +452,29 @@ h5 {
   .container {
     padding: 4rem 10rem;
   }
+
   .headline h1 {
     font-size: 4rem;
   }
+
   .headline p {
     font-size: 2rem;
   }
+
   .headline-box {
     width: 600px;
   }
+
   .headline-box p {
     line-height: 1.5;
     font-size: 0.85rem;
     font-weight: 600;
   }
+
   .headline-start h2 {
     font-size: 2.2rem;
   }
+
   .card-container {
     display: flex;
     flex-direction: row;
@@ -465,6 +484,7 @@ h5 {
     gap: 5px;
     width: 100%;
   }
+
   .program-card {
     width: 200px;
     height: 150px;
