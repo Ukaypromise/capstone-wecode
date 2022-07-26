@@ -78,7 +78,7 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* Small Screen Control */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Small Screen Control>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -137,7 +137,7 @@ a {
   }
 }
 
-/* Headline */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<Headline>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .container {
   min-height: 60vh;
   padding: 3rem 2rem;
@@ -194,14 +194,15 @@ a {
   font-weight: 600;
 }
 
-/* Program Main */
+/* <<<<<<<<<<<<<<<<<<<<<<<Program Main>>>>>>>>>>>>>>>>>>>>>>> */
 .program {
-  min-height: 80vh;
+  min-height: 50vh;
   background-color: black;
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0 auto;
 }
 
 .program h2 {
@@ -209,7 +210,7 @@ a {
   text-align: center;
 }
 
-.program hr {
+.hr {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -230,30 +231,154 @@ a {
   align-items: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 2px;
+  margin-bottom: 3px;
+  cursor: pointer;
 }
 .card-title {
   color: #ec5242;
   margin-right: 1rem;
   margin-bottom: o.5rem;
+  max-width: 40%;
 }
 
 .card-img {
-  width: 40px;
+  max-width: 20%;
   margin: 5px;
 }
-.program-card p {
-  font-size: 0.85rem;
+.card-text {
+  font-size: 0.75rem;
   color: #fff;
-  max-width: 200px;
+  max-width: 45%;
 }
+
+.program-card:hover {
+  border: 1px solid #fff;
+}
+
 .btn-join {
-  width: 300px;
-  padding: 25px;
+  width: 250px;
+  padding: 15px;
   background-color: #ec5242;
   color: #fff;
   margin: 0 auto;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-join:hover {
+  background-color: #961709;
+  color: #fff;
 }
 
+.see {
+  display: none;
+}
+/*<<<<<<<<<<<<<<<<<<<< Featured Speakers >>>>>>>>>>>>>>>>>>>>>*/
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 2rem;
+}
+
+.featured-speakers h2 {
+  color: #272a31;
+  text-align: center;
+}
+
+.speaker-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.speaker-img {
+  width: 120px;
+  height: 120px;
+}
+.speaker-content {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-content em {
+  font-size: 12px;
+  margin-top: 0.5rem;
+  color: #ec5242;
+}
+.speaker-content p {
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+.see-more {
+  width: 100%;
+  padding: 1rem;
+  color: #ec5242;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.fa-angle-down {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<< Partners>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.partner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #2c2b2b;
+  padding: 1rem 0;
+}
+.partner h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.partner-logo {
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+.p-logo {
+  margin: 0 auto;
+  width: 100px;
+  margin: 1rem;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<Footer>>>>>>>>>>>>>>>>> */
+
+.footer-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: auto 2rem;
+  padding: 2rem 0;
+}
+h5 {
+  width: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer-info p {
+  width: 50%;
+  text-align: start;
+  font-size: 0.85rem;
+}
 /* Larger Screen */
 @media screen and (min-width: 768px) {
   /* <<<<<<<  Navbar >>>>>>> */
@@ -332,17 +457,39 @@ a {
     font-size: 2.2rem;
   }
   .card-container {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  
-}
-.program-card{
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 30px;
-  max-height: 800px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+  }
+  .program-card {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .card-text {
+    max-width: 60%;
+  }
+
+  .btn-join {
+    display: none;
+  }
+
+  .see-more {
+    display: none;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75vw;
+    margin: 0 auto;
+  }
 }
