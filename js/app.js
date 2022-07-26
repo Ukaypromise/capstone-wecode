@@ -67,7 +67,7 @@ const speakers = [
     name: 'Authentic One',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
+      'Lorem ipsum dolora sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
   },
 ];
 
