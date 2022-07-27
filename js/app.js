@@ -94,29 +94,10 @@ const displaySpeakers = speakers.map(
 
 // See More
 
-const seeMore = document.querySelector(".see-more");
-const seeLess = document.querySelector(".see-less");
 
-// seeMore.addEventListener('click', () => {
-//   document.getElementById('wrapper').innerHTML = displaySpeakers.join('');
-//   seeMore.style.display = 'none';
-//   seeLess.style.display = 'block';
-// });
 
-// seeLess.addEventListener('click', () => {
-//   document.getElementById('wrapper').innerHTML = displaySpeakers
-//     .splice(0, 2)
-//     .join('');
-// });
 
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("wrapper").innerHTML = displaySpeakers.join("");
-  seeMore.style.display = "none";
-  seeLess.style.display = "none";
-
-  // else {
-  //   document.getElementById("wrapper").innerHTML = displaySpeakers.splice(0,2).join("");
-  //   seeMore.style.display = "block";
-  //   seeLess.style.display = "none";
-  // }
+    
 });
