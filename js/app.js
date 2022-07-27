@@ -71,8 +71,8 @@ const speakers = [
   },
 ];
 
-window.addEventListener('DOMContentLoaded', () => {
-  const displaySpeakers = speakers.map((speaker) => `
+const displaySpeakers = speakers.map(
+  (speaker) => `
     <div id=${speaker.id} >
       <div class="speaker-container">
             <img
@@ -89,18 +89,33 @@ window.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
-    `);
-  document.getElementById('wrapper').innerHTML = displaySpeakers.join('');
-});
+    `
+);
+
 
 // See More
 const seeMore = document.querySelector('.see-more');
+const seeLess = document.querySelector(".see-less");
+
 const seeMoreContent = document.querySelector('.wrapper');
 
-seeMore.addEventListener('click', () => {
-  if (seeMoreContent.style.display === 'block') {
-    seeMoreContent.style.display = 'none';
-  } else {
-    seeMoreContent.style.display = 'block';
-  }
+seeMore.addEventListener("click", () => {
+  document.getElementById("wrapper").innerHTML = displaySpeakers.join('');
+  seeMore.style.display = 'none';
+  seeLess.style.display = "block";
 });
+
+seeLess.addEventListener("click", () => {
+  document.getElementById("wrapper").innerHTML = displaySpeakers
+    .splice(0, 2)
+    .join('');
+  
+})
+
+window.addEventListener('DOMContentLoaded', () => {  
+ document.getElementById("wrapper").innerHTML = displaySpeakers.splice(0,2) 
+  seeLess.style.display = "none";
+});
+
+
+

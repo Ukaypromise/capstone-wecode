@@ -332,6 +332,15 @@ a {
   font-size: 1rem;
 }
 
+.see-less {
+  width: 100%;
+  padding: 1rem;
+  color: #ec5242;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
 .fa-angle-down {
   font-size: 1rem;
   padding: 5px;
@@ -503,6 +512,10 @@ h5 {
   }
 
   .see-more {
+    display: none;
+  }
+
+  .see-less {
     display: none;
   }
 
