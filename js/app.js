@@ -1,78 +1,78 @@
 // Navigation
-const hambugerMenu = document.querySelector('.hambuger');
+const hambugerMenu = document.querySelector(".hambuger");
 
-const navMenu = document.querySelector('.nav-menu');
+const navMenu = document.querySelector(".nav-menu");
 
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll(".nav-link");
 
 // Toggle the menu
-hambugerMenu.addEventListener('click', () => {
-  hambugerMenu.classList.toggle('active');
+hambugerMenu.addEventListener("click", () => {
+  hambugerMenu.classList.toggle("active");
 
-  navMenu.classList.toggle('active');
+  navMenu.classList.toggle("active");
 });
 
 navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    hambugerMenu.classList.remove('active');
+  link.addEventListener("click", () => {
+    hambugerMenu.classList.remove("active");
 
-    navMenu.classList.remove('active');
+    navMenu.classList.remove("active");
   });
 });
 
 const speakers = [
   {
     id: 1,
-    img: '../images/speakers/speaker1.png',
-    name: 'Abubakar Siddiq Ango',
-    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    img: "../images/speakers/speaker1.png",
+    name: "Abubakar Siddiq Ango",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid",
   },
   {
     id: 2,
-    img: '../images/speakers/speaker2.png',
-    name: 'Simi Oluwatomi',
-    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    img: "../images/speakers/speaker2.png",
+    name: "Simi Oluwatomi",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid",
   },
   {
     id: 3,
-    img: '../images/speakers/speaker3.png',
-    name: 'Abdul Hakim',
-    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    img: "../images/speakers/speaker3.png",
+    name: "Abdul Hakim",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid",
   },
   {
     id: 4,
-    img: '../images/speakers/speaker4.png',
-    name: 'Hayatu Abubakar',
-    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    img: "../images/speakers/speaker4.png",
+    name: "Hayatu Abubakar",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid",
   },
   {
     id: 5,
-    img: '../images/speakers/speaker5.png',
-    name: 'Auwal MS',
-    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    img: "../images/speakers/speaker5.png",
+    name: "Auwal MS",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid",
   },
   {
     id: 6,
-    img: '../images/speakers/speaker6.png',
-    name: 'Authentic One',
-    bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+    img: "../images/speakers/speaker6.png",
+    name: "Authentic One",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing.",
     about:
-      'Lorem ipsum dolora sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid',
+      "Lorem ipsum dolora sit amet consectetur adipisicing elit. Faciliiusto. Cumque repellat delectus earum aliquid",
   },
 ];
 
-window.addEventListener('DOMContentLoaded', () => {
-  const displaySpeakers = speakers.map((speaker) => `
+const displaySpeakers = speakers.map(
+  (speaker) => `
     <div id=${speaker.id} >
       <div class="speaker-container">
             <img
@@ -89,18 +89,34 @@ window.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
-    `);
-  document.getElementById('wrapper').innerHTML = displaySpeakers.join('');
-});
+    `
+);
 
 // See More
-const seeMore = document.querySelector('.see-more');
-const seeMoreContent = document.querySelector('.wrapper');
 
-seeMore.addEventListener('click', () => {
-  if (seeMoreContent.style.display === 'block') {
-    seeMoreContent.style.display = 'none';
-  } else {
-    seeMoreContent.style.display = 'block';
-  }
+const seeMore = document.querySelector(".see-more");
+const seeLess = document.querySelector(".see-less");
+
+// seeMore.addEventListener('click', () => {
+//   document.getElementById('wrapper').innerHTML = displaySpeakers.join('');
+//   seeMore.style.display = 'none';
+//   seeLess.style.display = 'block';
+// });
+
+// seeLess.addEventListener('click', () => {
+//   document.getElementById('wrapper').innerHTML = displaySpeakers
+//     .splice(0, 2)
+//     .join('');
+// });
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("wrapper").innerHTML = displaySpeakers.join("");
+  seeMore.style.display = "none";
+  seeLess.style.display = "none";
+
+  // else {
+  //   document.getElementById("wrapper").innerHTML = displaySpeakers.splice(0,2).join("");
+  //   seeMore.style.display = "block";
+  //   seeLess.style.display = "none";
+  // }
 });
