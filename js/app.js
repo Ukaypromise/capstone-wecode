@@ -89,33 +89,26 @@ const displaySpeakers = speakers.map(
             </div>
         </div>
     </div>
-    `
+    `,
 );
-
 
 // See More
 const seeMore = document.querySelector('.see-more');
-const seeLess = document.querySelector(".see-less");
+const seeLess = document.querySelector('.see-less');
 
-const seeMoreContent = document.querySelector('.wrapper');
-
-seeMore.addEventListener("click", () => {
-  document.getElementById("wrapper").innerHTML = displaySpeakers.join('');
+seeMore.addEventListener('click', () => {
+  document.getElementById('wrapper').innerHTML = displaySpeakers.join('');
   seeMore.style.display = 'none';
-  seeLess.style.display = "block";
+  seeLess.style.display = 'block';
 });
 
-seeLess.addEventListener("click", () => {
-  document.getElementById("wrapper").innerHTML = displaySpeakers
+seeLess.addEventListener('click', () => {
+  document.getElementById('wrapper').innerHTML = displaySpeakers
     .splice(0, 2)
     .join('');
-  
-})
-
-window.addEventListener('DOMContentLoaded', () => {  
- document.getElementById("wrapper").innerHTML = displaySpeakers.splice(0,2) 
-  seeLess.style.display = "none";
 });
 
-
-
+window.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('wrapper').innerHTML = displaySpeakers.splice(0, 2);
+  seeLess.style.display = 'none';
+});
