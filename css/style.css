@@ -386,7 +386,7 @@ a {
 
 /* <<<<<<<<<<<<<<<<<<<<<<<< Partners>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .partner {
-  height: 40vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
