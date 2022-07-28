@@ -13,9 +13,14 @@ A website for a web development course
 
 Click the [Link](https://capstone-wecode.netlify.app/) to see a Live Demo to this project.
 
+
+Here is another link to github pages [Link](https://ukaypromise.github.io/capstone-wecode/) to see a Live Demo to this project.
+
 ## Live Video Recording
 
 Here is a [Link](https://www.loom.com/share/98568017719f4f30bd6c2ffbb6484680) to a video of this project.
+
+
 
 
 
