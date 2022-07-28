@@ -10,7 +10,7 @@ A website for a web development course
   -NPM, Git, Github
 
 ## Live Demo
-
+![](../preview.png)
 Click the [Link](https://capstone-wecode.netlify.app/) to see a Live Demo to this project.
 
 

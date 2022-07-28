@@ -152,8 +152,7 @@ a {
 }
 
 .container-bg {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       rgba(255, 255, 255, 0.842),
       rgba(202, 203, 209, 0.7)
     ),
@@ -186,7 +185,7 @@ a {
 }
 
 .welcome-text h1 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   color: #b93223;
   text-align: center;
@@ -415,7 +414,7 @@ a {
 }
 
 .p-logo {
-  width: 150px;
+  width: 100px;
   margin: 1rem;
 }
 
@@ -579,17 +578,22 @@ h5 {
     width: 75vw;
     margin: 0 auto;
   }
+
+  .p-logo {
+    width: 150px;
+  }
 }
+
+
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOUT SECTION>>>>>>>>>>>>>>>>>>>>>>>>> */
 .welcome {
-  height: 58vh;
+  height: 61vh;
   padding: 0.5rem 2rem;
 }
 
 .welcome-bg {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       rgba(255, 255, 255, 0.842),
       rgba(202, 203, 209, 0.7)
     ),
@@ -613,7 +617,7 @@ h5 {
 
 .modal-mobile {
   width: 100%;
-  padding: 0.8rem 1.5rem;
+  padding: 0.4rem 0.8rem;
   margin-top: 0.85rem;
   border: 2px solid #e5e5e5;
   text-align: center;
@@ -738,8 +742,7 @@ h5 {
 .alumni-img {
   width: 350px;
   height: 200px;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       rgba(167, 27, 27, 0.842),
       rgba(230, 57, 57, 0.7)
     ),
