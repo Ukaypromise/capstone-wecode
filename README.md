@@ -56,7 +56,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to the reviewers
+- Thanks to [Cindy Shin](https://github.com/Ukaypromise/) whose design gotten from behance was used as an inspiration for this project.
 - etc
 
 ## 📝 License
