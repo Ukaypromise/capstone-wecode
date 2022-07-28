@@ -23,7 +23,7 @@ navLinks.forEach((link) => {
 const speakers = [
   {
     id: 1,
-    img: '../images/speakers/speaker1.png',
+    img: './images/speakers/speaker1.png',
     name: 'Abubakar Siddiq Ango',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     about:
@@ -31,7 +31,7 @@ const speakers = [
   },
   {
     id: 2,
-    img: '../images/speakers/speaker2.png',
+    img: './images/speakers/speaker2.png',
     name: 'Simi Oluwatomi',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     about:
@@ -39,7 +39,7 @@ const speakers = [
   },
   {
     id: 3,
-    img: '../images/speakers/speaker3.png',
+    img: './images/speakers/speaker3.png',
     name: 'Abdul Hakim',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     about:
@@ -47,7 +47,7 @@ const speakers = [
   },
   {
     id: 4,
-    img: '../images/speakers/speaker4.png',
+    img: './images/speakers/speaker4.png',
     name: 'Hayatu Abubakar',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     about:
@@ -55,7 +55,7 @@ const speakers = [
   },
   {
     id: 5,
-    img: '../images/speakers/speaker5.png',
+    img: './images/speakers/speaker5.png',
     name: 'Auwal MS',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     about:
@@ -63,7 +63,7 @@ const speakers = [
   },
   {
     id: 6,
-    img: '../images/speakers/speaker6.png',
+    img: './images/speakers/speaker6.png',
     name: 'Authentic One',
     bio: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     about:
