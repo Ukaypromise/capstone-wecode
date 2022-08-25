@@ -1,6 +1,6 @@
 # capstone-wecode
 
-A website for a web development course
+A website for a web development course. The project was built with vanilla javascript. Most of the content was rendered dynamically by manipulating the DOM. CSS animations was also used to improve the user experience of the application.
 
 > Capstone Project
 
